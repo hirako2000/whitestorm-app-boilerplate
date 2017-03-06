@@ -19,7 +19,11 @@ const config = {
       },
       {
         test: /\.(glsl|frag|vert)$/, loader: 'glslify-loader', exclude: /node_modules/
-      }
+      },
+      {
+        test: /\.(jpg|jpeg|png|json|obj)$/,
+        loader: "url-loader"
+      },
     ]
   },
 
